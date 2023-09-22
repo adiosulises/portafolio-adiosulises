@@ -1,110 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>adiosulises | música</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adiosulises | música</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://use.typekit.net/ikg4zen.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-    <link rel="stylesheet" href="../CSS/styles.css" />
-  </head>
-  <body>
-    <nav class="ulinav">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center inicio">
-          <a href="../index.html" class="text-black">
-            <i class="bi bi-folder-fill"></i>
-            Inicio
-          </a>
+  <link rel="stylesheet" href="https://use.typekit.net/ikg4zen.css" />
+
+  <link rel="stylesheet" href="../CSS/styles.css" />
+</head>
+
+<body>
+  <nav class="ulinav sticky-top">
+    <div class="navegacion d-flex justify-content-between text-black align-items-center">
+      <div class="rainbow-container">
+        <a href="../index.html" class="fw-bold rainbow">adiosulises</a>
+      </div>
+      <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="navegacion">
-          <button
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                adiosulises
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        <div class="offcanvas-body text-start">
+          <ul>
+            <li>
+              <a href="../index.html" class="nav-item inicio">
+                <i class="bi bi-folder-fill"></i>
+                inicio
+              </a>
+            </li>
+            <li>
+              <a href="../musica/index.html" class="nav-item musica">
+                <i class="bi bi-filetype-mp3"></i>
+                música
+              </a>
+            </li>
+            <li>
+              <a href="../ropa/index.html" class="nav-item ropa">
+                <i class="bi bi-filetype-ai"></i>
+                ropa
+              </a>
+            </li>
+            <li>
+              <a href="../arte/index.html" class="nav-item arte">
+                <i class="bi bi-filetype-exe"></i>
+                arte
+              </a>
+            </li>
+            <li>
+              <a href="../dce/index.html" class="nav-item dce">
+                <i class="bi bi-filetype-docx"></i>
+                DCE
+              </a>
+            </li>
+            <li>
+              <a href="../trabajo/index.html" class="nav-item trabajo">
+                <i class="bi bi-filetype-jsx"></i>
+                trabajo
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="inicios" class="pt-4 pb-4">
+    <div class="container">
+      <h1>Inicios</h1>
+      <div class="row">
+        <div class="col-7">
+          <div class="pe-4">
+            <p>
+              Aprendí a tocar guitarra en 5to de primaria. Despues de 2 años
+              tocando decidí moverme al bajo, instrumento que disfruto mucho y
+              que sería mi primera entrada a la música en vivo y la composición
+              con compañeros.
+            </p>
+            <p>
+              Entrando a la prepa comencé a tocar con más gente
+              lo cuál abrió mucho mi sentido músical y me ayudo a desarrollarme
+              a pasos más grandes que las clases de música alguna vez lograrón.
+              Toqué en dos bandas (nada serio) hasta que comencé a tocar con un
+              músico más experimentado en la escena lócal.
+            </p>
+          </div>
+        </div>
+        <div class="col-5">
+          <div id="carouselExampleAutoplaying" class="carousel slide shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Media/inicios.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Media/inicios 2.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
             </div>
-            <div class="offcanvas-body">
-              <ul>
-                <li>
-                  <a href="">
-                    <i class="bi bi-folder-fill"></i>
-                    Inicio
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="bi bi-filetype-mp3"></i>
-                    Música
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="bi bi-filetype-ai"></i>
-                    Ropa
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="bi bi-filetype-exe"></i>
-                    Arte
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="bi bi-filetype-docx"></i>
-                    DCE
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="bi bi-filetype-jsx"></i>
-                    Trabajo
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
-    </nav>
-  </body>
+    </div>
+  </section>
+  <section id="diabolicos" class="pt-4 pb-4">
+    <div class="container">
+      <h1 class="text-end">
+        Los Diabólicos
+      </h1>
+      <div class="row pb-4">
+        <div class="col-5">
+          <div id="carouselDiabolicos" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Media/los diabolicos.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Media/bajo.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Media/bajo 2.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiabolicos"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDiabolicos"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="text-end ps-4">
+            <p>
+              El primer (y único) material fue grabado en <b>agosto del 2018</b> Ese disco nos llevo a muchos lugares,
+              así como un tour por
+              México, dos festivales grandes y <b>tocar fuera del país</b>. A finales de 2019 grabamos nuestro segundo
+              material pero en 2020 la pandemia
+              hizo que la banda se disolviera. Actualmente está activa en Ciudad de México pero yo no formo parte de
+              ella. Ese segundo material
+              nunca se publicó.
+            </p>
+            <p>
+              Formamos una banda que
+              despues se convertiría en <b>Los Diabólicos</b>. Obtuvimos nuestro primer show junto a una de las bandas
+              más grandes en la escena indie mexicana,
+              <b>Los Blenders</b>. Este primer show daría lugar a formar una gran relación con la música en vivo, el
+              tocar fuera de mi ciudad y el ligero éxito
+              obtendría este proyecto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/album/3oKYkcpoGmYLfCi2Fdagjo?utm_source=generator&theme=0" width="100%"
+        height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </section>
+  <section id="stinky">
+    <div class="container">
+      <h1 class="stinky text-center pb-4">
+        STINKY GAMING
+      </h1>
+      <div class="row">
+        <div class="col-7">
+          <div class="pe-4">
+            <p>
+              Durante la cuarentena y el encierro que sufrimos comencé un nuevo circulo de amistades el cual terminó en un
+            proyecto músical. Inicialmente
+            hicimos música por aburrimiento y diversión. Solíamos hacer competencias de quien hacía el mejor remix de x
+            canción en 10 minutos.
+            </p>
+            <p>
+              Eventualmente esto se convirtió en <b>Stinky Gaming</b>. Un proyecto basado en el internet, formado por la
+            experiencia de crecer en México y ser
+            criado por la cultura del internet. Grabamos varías canciones que se convertirían en un primer EP. Hemos
+            tenido fechas en Hermosillo,
+            Ciudad de México y Guadalajara. Actualmente nos encontramos activos, aunque un miembro no está en el país de
+            momento.
+            </p>
+          </div>
+        </div>
+        <div class="col-5">
+          <div id="carouselStinky" class="carousel slide shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Media/stinky.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Media/stinky 2.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Media/stinky 3.jpg" class="d-block w-100 img-carrusel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStinky"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStinky"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-7">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6Y1PEXRNM5tHTIwO2lWesa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <div class="row d-flex align-items-center pt-4">
+            <div class="col-4">
+              <img class="flyer shadow-lg" src="/Media/flyers/flyer stinky.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="flyer shadow-lg" src="/Media/flyers/flyer 2.png" alt="">
+            </div>
+            <div class="col-4">
+              <img class="flyer shadow-lg" src="/Media/flyers/flyer 3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col embed-container">
+          <iframe src="https://www.youtube.com/embed/e624EltfY4k?si=PSrxD0CbZZsxwVEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="otros" class="pt-4 pb-4"></section>
+</body>
+
 </html>

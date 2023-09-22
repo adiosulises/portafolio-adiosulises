@@ -1,5 +1,5 @@
 body {
-  color: white;
+  color: black;
   font-family: "korolev", sans-serif;
   font-weight: 500;
 }
@@ -11,22 +11,22 @@ h1 {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 i {
-    color: black;
+  color: black;
 }
 
 button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 nav {
@@ -47,6 +47,71 @@ nav li {
 
 .ulinav {
   padding: 10px;
+  background-color: white;
+}
+
+.nav-item {
+  color: black;
+  transition: ease-in-out 100ms;
+}
+
+.nav-item:hover {
+}
+
+.nav-item i {
+  transition: ease-in-out 100ms;
+}
+
+.nav-item:hover {
+  color: #1397e2;
+}
+
+.nav-item:hover i {
+  color: #1397e2;
+}
+
+.musica:hover {
+  color: #fe5e2d;
+}
+
+.ropa:hover {
+  color: #feb0c6;
+}
+
+.arte:hover {
+  color: #9a16a9;
+}
+
+.dce:hover {
+  color: #9fd12f;
+}
+
+.trabajo:hover {
+  color: #fbcb04;
+}
+
+.musica:hover i {
+  color: #fe5e2d;
+}
+
+.ropa:hover i {
+  color: #feb0c6;
+}
+
+.arte:hover i {
+  color: #9a16a9;
+}
+
+.dce:hover i {
+  color: #9fd12f;
+}
+
+.trabajo:hover i {
+  color: #fbcb04;
+}
+
+.rainbow-container {
+  font-size: 28px;
 }
 
 .text-none {
@@ -69,10 +134,14 @@ nav li {
   margin: 0 auto;
 }
 
+.folders {
+  color: white;
+}
+
 .folder i {
   font-size: 60px;
   color: #1397e2;
-  transition: ease-in-out 100ms;
+  transition: all ease-in-out 100ms;
 }
 
 .folder h1 {
@@ -81,7 +150,10 @@ nav li {
   transition: ease-in-out 100ms;
 }
 
-.folder:hover > i {
+.folder:hover i {
+  -ms-transform: scale(1.5, 1.5); /* IE 9 */
+  -webkit-transform: scale(1.5, 1.5); /* Safari */
+  transform: scale(1.5, 1.5);
   color: #0f72ab;
 }
 
@@ -93,4 +165,41 @@ nav li {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-carrusel {
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.stinky {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 80px;
+  color: white;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.flyer {
+  width: 230px;
 }
